@@ -57,22 +57,23 @@ export default {
 }
 </script>
 <style scoped>
+
 .hero.is-success {
   background: rgb(220, 226, 231);
 }
+
 .box {
-	-webkit-box-shadow: 6px 6px 10px rgba(153, 153, 153, 0.507);
-	   -moz-box-shadow: 6px 6px 10px rgba(153, 153, 153, 0.507);
-	        box-shadow: 6px 6px 10px rgba(153, 153, 153, 0.507);
+  box-shadow: 6px 6px 10px rgba(153, 153, 153, 0.507);
 }
+
 .avatar {
   margin-top: -70px;
   padding-bottom: 20px;
 }
+
 .avatar img {
   padding: 5px;
   border-radius: 50%;
-  -webkit-box-shadow: 0 2px 3px rgba(10,10,10,.1), 0 0 0 1px rgba(10,10,10,.1);
   box-shadow: 0 2px 3px rgba(10,10,10,.1), 0 0 0 1px rgba(10,10,10,.1);
 }
 
