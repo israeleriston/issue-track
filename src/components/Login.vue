@@ -1,39 +1,90 @@
 <template>
 <div>
-<nav class="navbar is-info  is-fixed-top">
+  <section >
+    <nav class="navbar is-default is-fixed-top">
     <div class="container">
       <div class="navbar-brand">
-        <a class="navbar-item brand-text is-italic" href="../">
-          Issue Tracking
+        <a class="navbar-item has-text-weight-semibold is-active" href="../">
+          Issue Tracking - Rastreio de seus tickets
         </a>
-        <div class="navbar-burger burger" data-target="navMenu">
-          <span></span>
-          <span></span>
-          <span></span>
-        </div>
-      </div>
-      <div id="navMenu" class="navbar-menu">
-        <div class="navbar-end">
-          <div class="navbar-item has-dropdown is-hoverable">
-    <a class="navbar-link">
-      Olá Admin
-    </a>
-    <div class="navbar-dropdown">
-      <a class="navbar-item">
-        Alterar Senha
-      </a>
-      <a class="navbar-item">
-        Sair
-      </a>
-    </div>
-        </div>
-        </div>
-
       </div>
     </div>
   </nav>
-  </div>
+  </section>
+  <section class="hero is-success is-fullheight">
+    <div class="hero-body">
+      <div class="container has-text-centered">
+        <div class="column is-4 is-offset-4">
+          <div class="box">
+            <figure class="avatar">
+              <img src="https://placehold.it/128x128">
+            </figure>
+            <form>
+              <div class="field">
+                <div class="control">
+                  <input class="input is-primary" type="text" placeholder="Usuário" >
+                </div>
+              </div>
+              <div class="field">
+                <div class="control">
+                  <input class="input is-primary" type="password" placeholder="Senha">
+                </div>
+              </div>
+              <div class="control has-5-mt">
+                <button class="button is-block is-primary is-fullwidth">Login</button>
+              </div>
+                <div class="field has-5-mt">
+                  <div class="control">
+                  <label class="checkbox"><input type="checkbox"> Lembrar</label>
+                  </div>
+              </div>
+            </form>
+          </div>
+          <p class="has-text-grey">
+            <a href="../" >Primeiro Acesso</a> &nbsp;·&nbsp;
+            <a href="../">Esqueceu a Senha</a> &nbsp;·&nbsp;
+            <a href="../">Ajuda</a>
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+</div>
 </template>
 <script>
-export default {}
+export default {
+  name: 'Login-view'
+}
 </script>
+<style scoped>
+.hero.is-success {
+  background: rgb(220, 226, 231);
+}
+.box {
+	-webkit-box-shadow: 6px 6px 10px rgba(153, 153, 153, 0.507);
+	   -moz-box-shadow: 6px 6px 10px rgba(153, 153, 153, 0.507);
+	        box-shadow: 6px 6px 10px rgba(153, 153, 153, 0.507);
+}
+.avatar {
+  margin-top: -70px;
+  padding-bottom: 20px;
+}
+.avatar img {
+  padding: 5px;
+  border-radius: 50%;
+  -webkit-box-shadow: 0 2px 3px rgba(10,10,10,.1), 0 0 0 1px rgba(10,10,10,.1);
+  box-shadow: 0 2px 3px rgba(10,10,10,.1), 0 0 0 1px rgba(10,10,10,.1);
+}
+
+p {
+  font-weight: 700;
+}
+p.subtitle {
+  padding-top: 1rem;
+}
+
+.has-5-mt {
+  margin-top: 5%;
+}
+
+</style>
