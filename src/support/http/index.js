@@ -5,7 +5,7 @@ export const http = axios.create({
 })
 
 export default function install (Vue) {
-  Object.defineProperty(Vue, '$http', {
+  Object.defineProperty(Vue.prototype, '$http', {
     get: () => http
   })
 }
