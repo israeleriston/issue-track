@@ -4,8 +4,6 @@ import Vue from 'vue'
 import Root from './Root'
 import router from './router'
 import store from './store'
-import '../node_modules/bulma-start/css/main.css'
-import '../node_modules/bulmaswatch/flatly/bulmaswatch.min.css'
 
 import Http from './support/http'
 
