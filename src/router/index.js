@@ -1,6 +1,6 @@
 import Vue from 'vue'
 import Router from 'vue-router'
-import Login from '@/components/Login'
+import Content from '@/components/internals/Content'
 
 Vue.use(Router)
 
@@ -8,6 +8,6 @@ export default new Router({
   routes: [{
     path: '/',
     name: 'Login',
-    component: Login
+    component: Content
   }]
 })

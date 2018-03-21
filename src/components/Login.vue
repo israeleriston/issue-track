@@ -56,7 +56,7 @@ export default {
   name: 'Login-view'
 }
 </script>
-<style scoped>
+<style >
 
 .hero.is-success {
   background: rgb(220, 226, 231);
