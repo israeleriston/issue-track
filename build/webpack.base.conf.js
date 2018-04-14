@@ -78,7 +78,7 @@ module.exports = {
       // custom loader sass/scss
       {
           test: /\.s[a|c]ss$/,
-          loader: 'style!css!sass'
+          loader: 'style!css!sass!scss'
       }
     ]
   },

@@ -9,6 +9,4 @@ export default {
 
 }
 </script>
-<style lang="sass">
-@import './assets/custom/main.scss';
-</style>
+<style lang="sass" src='./assets/custom/main.sass'>
